@@ -683,6 +683,7 @@ body {
 .benefits-list {
   max-width: 370px;
   display: flex;
+  column-gap: 20px;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
@@ -708,7 +709,11 @@ body {
 .benefits-item:not(:last-child) {
   margin-bottom: 30px;
 }
+
 @media screen and (min-width: 480px) {
+  .benefits-list {
+    column-gap: 0px;
+  }
   .benefits-item:not(:last-child) {
     margin: 0;
   }
